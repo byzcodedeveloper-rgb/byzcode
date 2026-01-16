@@ -1,10 +1,16 @@
-
 /* Fonts */
+:root {
+  --font-default: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  --font-primary: "Georgia", "Times New Roman", serif;
+  --font-secondary: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+/* Fonts 
 :root {
   --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-primary: "Montserrat", sans-serif;
   --font-secondary: "Poppins", sans-serif;
-}
+} */
 
 /* Colors */
 :root {
@@ -89,6 +95,32 @@ section {
   margin-bottom: 0;
   color: #6f6f6f;
 }
+
+.icon-box {
+  background-color: #0D47A1 !important; /* azul marino */
+  color: #FFFFFF !important;
+  border-radius: 8px !important;
+  padding: 20px !important;
+  transition: 0.3s ease !important;
+}
+
+.icon-box{
+	background-color: #030338 !important; /* azul oscuro */
+}
+
+.icon-box a {
+  color: #FFFFFF !important;
+  
+  }
+
+.icon-box:hover {
+  background-color: #38297F !important; /* azul medio vibrante */
+}
+
+.icon-box .icon {
+  color: #64B5F6 !important; /* azul claro para el ícono diamante */
+}
+
 
 /*--------------------------------------------------------------
 # Breadcrumbs
@@ -228,6 +260,8 @@ section {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+
+
 .topbar {
   background: #ffffff;
   height: 40px;
@@ -2545,7 +2579,7 @@ section {
 --------------------------------------------------------------*/
 .footer {
   font-size: 14px;
-  background-color: var(--color-primary);
+  background-color: #030338;
   padding: 50px 0;
   color: white;
 }
