@@ -49,8 +49,8 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="#">Inicio</a></li>
-          <li class="dropdown"><a href="#"><span>Servicios de Desarrollo</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-            <ul>
+          <li class="dropdown"><a href="#" ><span>Servicios de Desarrollo</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul class="dropdown-menu">
               <li><a href="#tiendas-virtuales"><span>Desarrollo de Tiendas Virtuales</span></a></li>
               <li><a href="#sitios-web"><span>Desarrollo de Sitios Web</span></a></li>
               <li><a href="#app-web"><span>Aplicaciones Web a la Medida</span></a></li>
@@ -560,6 +560,20 @@
     
   <!-- Template Component  JS File -->
     <!-- VUE PLUGIN -->
+	
+  <script>
+  // Cerrar dropdown al hacer clic en cualquier enlace interno
+  document.querySelectorAll('#navbar .dropdown a[href^="#"]').forEach(link => {
+    link.addEventListener('click', () => {
+      const dropdown = link.closest('.dropdown');
+      if (dropdown && dropdown.classList.contains('dropdown-active')) {
+        dropdown.classList.remove('dropdown-active');
+      }
+    });
+  });
+</script>
+
+
 </body>
 
 </html>

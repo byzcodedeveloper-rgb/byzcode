@@ -1,8 +1,3 @@
-
-
-
-
-
 document.addEventListener('DOMContentLoaded', () => {
   "use strict";
     /** ======== FUNCIONES UTILITARIAS============
@@ -134,7 +129,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     })
   });
-
+  
+  
   /**
    * Initiate glightbox
    */
@@ -290,6 +286,40 @@ document.addEventListener('DOMContentLoaded', () => {
 
   }
   
+  document.querySelectorAll('.navbar .dropdown > a').forEach(trigger => {
+  trigger.addEventListener('click', function(e) {
+    if (window.innerWidth >= 1280) { // solo escritorio
+      e.preventDefault();
+      const submenu = this.nextElementSibling;
+      const isVisible = submenu.style.visibility === 'visible';
+      // cerrar todos los demás dropdowns
+      document.querySelectorAll('.navbar .dropdown ul').forEach(ul => {
+        ul.style.visibility = 'hidden';
+        ul.style.opacity = '0';
+      });
+      // abrir/cerrar el actual
+      if (!isVisible) {
+        submenu.style.visibility = 'visible';
+        submenu.style.opacity = '1';
+        submenu.style.top = '100%';
+      }
+    }
+  });
+});
+
+// cerrar al hacer clic en cualquier enlace interno
+document.querySelectorAll('.navbar .dropdown ul a').forEach(link => {
+  link.addEventListener('click', () => {
+    if (window.innerWidth >= 1280) {
+      const submenu = link.closest('ul');
+      submenu.style.visibility = 'hidden';
+      submenu.style.opacity = '0';
+    }
+  });
+});
+
+  
+
   /** ================= EVENTOS DEL MENU DESARROLLO ============= **/
   
   

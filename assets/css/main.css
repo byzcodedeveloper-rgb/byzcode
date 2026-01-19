@@ -462,11 +462,12 @@ section {
     color: var(--color-secondary);
   }
 
+  /*
   .navbar .dropdown:hover>ul {
     opacity: 1;
     top: 100%;
     visibility: visible;
-  }
+  }*/
 
   .navbar .dropdown .dropdown ul {
     top: 0;
