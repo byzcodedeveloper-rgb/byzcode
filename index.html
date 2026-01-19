@@ -20,6 +20,9 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  
+  <!-- Template Framework Vue.js File -->
+  <script src="assets/js/vue.js" defer></script>
 </head>
 <body>
 
@@ -41,8 +44,6 @@
 
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
         
       </a>
       <nav id="navbar" class="navbar">
@@ -50,11 +51,11 @@
           <li><a href="#">Inicio</a></li>
           <li class="dropdown"><a href="#"><span>Servicios de Desarrollo</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li><a href="#"><span>Tiendas Virtuales</span></a></li>
-              <li><a href="#"><span>Sitios Web</span></a></li>
+              <li><a href="#"><span>Desarrollo de Tiendas Virtuales</span></a></li>
+              <li><a href="#"><span>Desarrollo de Sitios Web</span></a></li>
               <li><a href="#"><span>Aplicaciones Web a la Medida</span></a></li>
               <li><a href="#"><span>Aplicaciones Moviles</span></a></li>
-              <li><a href="#"><span>Aplicaciones con Microcontroladores</span></a></li>
+              <li><a href="#"><span>Automatización de Procesos</span></a></li>
 			  <li><a href="#"><span>Desarrollo de APIs</span></a></li>
               <li><a href="#"><span>Portafolios Digitales</span></a></li>
               <li><a href="#"><span>Multimedias Portables</span></a></li>
@@ -168,7 +169,7 @@
               <div class="portfolio-wrap">
                 <a href="assets/img/portfolio/product-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Product 1</a></h4>
+                  <h4><a href="portfolio-details.html" title="More Details">Sitio ByZcode</a></h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                 </div>
               </div>
@@ -188,7 +189,7 @@
               <div class="portfolio-wrap">
                 <a href="assets/img/portfolio/books-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Tienda FerroClima Express</a></h4>
+                  <h4><a href="https://www.ferroclimaexpress.com" title="More Details">Tienda FerroClima Express</a></h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                 </div>
               </div>
@@ -268,7 +269,7 @@
               <div class="portfolio-wrap">
                 <a href="assets/img/portfolio/books-3.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/books-3.jpg" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Tienda CustomKolorz Shopify</a></h4>
+                  <h4><a href="https://wwww.customkolorz.com" title="More Details">Tienda CustomKolorz Shopify</a></h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                 </div>
               </div>
@@ -360,10 +361,10 @@
     <section id="contactenos" class="portfolio sections-bg">
       <div class="container" data-aos="fade-up">
 
-        <div class="section-header">
+        <div id="contacto" class="section-header">
           <h2>Contactenos</h2>
-          <p>Formulario de contacto</p>
-        </div>
+		  <message></message>
+   	    </div>
       </div>
     </section><!-- End Contactenos Section -->
   </main><!-- End #main -->
@@ -411,6 +412,7 @@
           <h4>Contáctenos</h4>
           <p>
             <strong>WhatsApp:</strong> +53 53588743<br>
+			<strong>WhatsApp:</strong> +53 54631934<br>
             <strong>Email:</strong> byzcode.developer@gmail.com<br>
           </p>
 
@@ -424,7 +426,7 @@
         &copy; Copyright <strong><span>ByZcode</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-        Diseñado por <a href="https://bootstrapmade.com/">Grupo ByZcode</a>
+        Diseñado por <a href="https://byzcodedeveloper-rgb.github.io/byzcode">Grupo ByZcode</a>
       </div>
     </div>
 
@@ -434,7 +436,8 @@
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <div id="preloader"></div>
-
+    
+  
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
   <script src="assets/vendor/aos/aos.js" defer></script>
@@ -444,8 +447,20 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js" defer></script>
   <script src="assets/vendor/php-email-form/validate.js" defer></script>
 
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/components/static-component.js" defer></script>
+
+  
+  
+  
   <!-- Template Main JS File -->
   <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/app.js" defer></script>
+  
+    
+  <!-- Template Component  JS File -->
+    <!-- VUE PLUGIN -->
 </body>
 
 </html>
